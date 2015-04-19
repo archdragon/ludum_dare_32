@@ -8,3 +8,6 @@ Game created for Ludum Dare competition.
 * Assets/Scripts - scripts written in C#
 * Assets/Materials - Unity3d materials
 
+## License
+
+CC0 - use it anywhere you like!
