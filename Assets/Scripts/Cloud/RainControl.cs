@@ -12,14 +12,13 @@ public class RainControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetKey(KeyCode.E)) {
+			CastSphere();
+		}
 		if(Input.GetKeyDown(KeyCode.E)) {
 			particleSystem.Play();
 		} else if(Input.GetKeyUp(KeyCode.E)) {
 			particleSystem.Stop();
-		}
-
-		if(particleSystem.isPlaying) {
-			CastSphere();
 		}
 	}
 

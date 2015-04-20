@@ -13,7 +13,7 @@ public class Follow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 finalPosition = target.transform.position;
-		finalPosition.y = height;
+		finalPosition.y = target.transform.position.y + height;
 		transform.position =  Vector3.Lerp(transform.position, finalPosition, 0.01f);
 	}
 }
